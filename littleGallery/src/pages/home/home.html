@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Kleine Galerie</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Hallo!</h3>
+
+  <p>
+    Mit dieser kleinen Anwendung kann man eine kleine Galerie erstellen.
+  </p>
+  <p>
+    Dabei können bereits aufgenommene Bilder hinzugefügt werden oder gleich ein neues Bild mit der Kamera aufgenommen werden.
+  </p>
+  <p>
+    <button ion-button color="primary" (click)="takePicture()">Mach ein Foto</button>
+  </p>
+  <p>
+    Letzte Fotos:
+    <img [src]="base64Image" *ngIf="base64Image" />
+  </p>
+
+</ion-content>

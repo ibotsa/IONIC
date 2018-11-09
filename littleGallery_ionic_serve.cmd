@@ -1,0 +1,2 @@
+cd littleGallery
+ionic serve

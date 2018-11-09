@@ -3,13 +3,15 @@ import { NavController } from 'ionic-angular';
 import { PhotoProvider } from '../../providers/photo/photo';
 
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'page-gallery',
+  templateUrl: 'gallery.html'
 })
 
-export class AboutPage {
+export class GalleryPage {
   constructor(public navCtrl: NavController, public photoService: PhotoProvider) {
-
   }
   
+  ngOnInit() {
+    this.photoService.loadSaved();
+ }
 }

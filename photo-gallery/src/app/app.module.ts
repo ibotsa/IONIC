@@ -5,6 +5,7 @@ import { MyApp } from './app.component';
 
 import { AboutPage } from '../pages/about/about';
 import { ContactPage } from '../pages/contact/contact';
+import { GalleryPage } from '../pages/gallery/gallery';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -21,6 +22,7 @@ import { IonicStorageModule } from '@ionic/storage';
     MyApp,
     AboutPage,
     ContactPage,
+    GalleryPage,
     HomePage,
     TabsPage
   ],
@@ -34,6 +36,7 @@ import { IonicStorageModule } from '@ionic/storage';
     MyApp,
     AboutPage,
     ContactPage,
+    GalleryPage,
     HomePage,
     TabsPage
   ],

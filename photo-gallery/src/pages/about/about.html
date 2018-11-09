@@ -1,25 +1,14 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Photo Gallery
+      Info
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>  
-  <ion-grid>
-    <ion-row>
-    <ion-col col-6 *ngFor="let photo of photoService.photos">
-        <img [src]="photo.data" />
-      </ion-col>
-    </ion-row>
-  </ion-grid>
-
-   
-  <ion-fab center bottom>
-    <button ion-fab (click)="photoService.takePicture()">
-       <ion-icon name="camera"></ion-icon>
-     </button>
-   </ion-fab>
-  </ion-content>
+<ion-content padding>
+  <p>
+    Diese Anwendung wurde im Rahmen des Moduls <code>Fachseminar webbasierte Anwendungen</code> bei Prof. Dr.-Ing. Ludger Martin im Wintersemester 2018/2019 an der Hochschule RheinMain erstellt.
+  </p>
+</ion-content>
 
